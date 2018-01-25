@@ -7,11 +7,11 @@ Python script that turns the cloudshell2 fan on/off
 * python-systemd
 * smartmontools
 
-## Installation
-1. Copy the python script to /usr/bin/cloudshell2-fan, omitting the .py suffix  
-   (or adopt the path to the python script the systemd file)
-2. Copy the systemd file to /etc/systemd/system/
-3. Start the service with `systemctl start cloudshell2-fan`
+## Installation (manually)
+1. Copy the python script **cloudshell2-fan.py** to /usr/bin/cloudshell2-fan, omitting the .py suffix  
+   (or adopt the path to the python script in cloudshell2-fan.service)
+2. Copy the file **cloudshell2-fan.service** to /etc/systemd/system/
+3. Start the service with `systemctl start cloudshell2-fan.service`
 
 There will also be a Arch Linux AUR package (not finished yet).
 
