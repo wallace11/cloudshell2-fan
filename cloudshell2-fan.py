@@ -95,6 +95,7 @@ if __name__ == '__main__':
 
     while(True):
         if sig_handler.kill_now:
+            fan_manager.fan_off()
             break
         fan_manager.handle_fan()
         time.sleep(SLEEP_SECONDS)
