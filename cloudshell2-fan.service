@@ -4,7 +4,7 @@ Description=Switches the fan on/off depending on the temperatures
 [Service]
 Type=simple
 User=root
-ExecStart=/usr/local/bin/cloudshell2-fan.py
+ExecStart=/usr/bin/cloudshell2-fan
 Restart=on-abort
 
 [Install]
