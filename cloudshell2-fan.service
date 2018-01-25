@@ -1,0 +1,11 @@
+[Unit]
+Description=Switches the fan on/off depending on the temperatures
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/local/bin/cloudshell2-fan.py
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
